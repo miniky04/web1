@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News - 새로운 소식</title>
+    <style>
+        body {
+                background-color: #F3F1E9;
+            }
+        h2 {
+            color:black;
+                display: inline-block;
+                border-top: 1px solid red;
+                border-bottom: 1px solid red;
+                padding: 5px 10px;
+                margin-top: 20px;
+                animation: 2s myanim;
+                animation-iteration-count:4;
+        }
+
+        @keyframes myanim {
+            0% {color: black;}
+            25%{color: yellow;}
+            50% {color: black;}
+            75%{color: yellow;}
+            100%{color: black;}
+        }
+        #home a:hover {
+                color: red;
+            }
+    </style>
+</head>
+<body>
+    <h2>새로운 소식 !</h2>
+    <P>
+        새로운 CSS를 배워오면 (실력이 지금보다 향상되었을 때) <br>
+        디자인을 조금 더 멋지게 ! 이쁘게 ! 꾸며볼 예정이라고<br>
+        <strong>mang00</strong> 가 의견을 내었습니다.
+    </P>
+    <p>
+        모두 큰 박수 한번씩 주세요!<br>
+        새로운 꽃단장 날은 미정이며, 수정하는 즉시 공지에 알리겠다고 전했습니다.<br>
+        조금 더 발전하는 그 날까지 작은 응원 부탁드립니다 ㅎㅎ 
+    </p>
+    <p id="home"><a href="index.html">여기를 눌러 home으로 돌아가주세요</a></p>
+</body>
+</html>

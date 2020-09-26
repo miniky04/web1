@@ -1,0 +1,110 @@
+/* 전체 틀 */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #F3F1E9;
+}
+
+/* header */
+header {
+    height: 60px;
+    margin: 10px;
+}
+
+/* nav */
+nav {
+    margin: 10px;
+}
+nav ul {
+    list-style: none;               /* 불릿을 표시하지 않는다. */
+    text-align: center;             /* 내용물은 중앙정렬 */
+    border-top: 1px solid red;    /* 윗 경계선만 1px두께, 빨간색 */
+    border-bottom: 1px solid red; /* 아래 경계선만 1px두께, 빨간색 */
+    padding: 10px 0;                /* 상하 패딩은 10px, 좌우 패딩은 0 */
+}
+nav ul li {
+    display: inline;            /* <li>요소는 블럭 요소이지만 인라인 요소로 변경 */
+    text-transform: uppercase;  /* 전부 대문자로 변경 */
+    padding: 0 10px;            /* 상하 패딩은 0, 좌우 패딩은 10px */
+    letter-spacing: 10px;       /* 글자 간격 10px */
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* 마우수가 위에 떠있으면 밑줄이 그어지게 한다. */
+}
+
+/* <aside id="left"> */
+aside#left {
+    width: 175px;
+    margin-top: 20px;
+    float: left;
+}
+#left h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#left ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: 15px;
+    color: #FFF;
+    list-style: none;
+    text-indent: 15px;
+}
+#left ul li {
+    background: #3f3f3f;
+    line-height: 28px;
+    border-bottom: 1px solid #333;
+}
+#left ul li a {
+    text-decoration: none;
+    color: #FFF;
+    display: block; /* 글자뿐만 아니라 한 줄 전체가 선택 된다. */
+}
+#left ul li a:hover {
+    background:#d40203;
+}
+#left ul li#active {
+    background: #d40203;
+}
+
+/* <article> */
+#main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: 12px;
+    color: #464646;
+    overflow: hidden;
+    float: left;
+    width: 430px;
+}
+
+/* <aside id="right" */
+aside#right {
+    padding: 0px;
+    margin-left: 10px;
+    width: 200px;
+    float:left;
+}
+
+/* 쇼핑카트와 로그인 배치 */
+#shopcart {
+    margin-bottom: 20px;
+}
+#login {
+    margin-top: 40px;
+}
+
+/* <footer> */
+footer {
+    width: 100%;
+    height: 50px;
+    clear: both;
+    /* background-image: url; */
+    background-position: top left;
+    background-repeat: repeat-x;
+}
